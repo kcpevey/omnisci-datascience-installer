@@ -62,7 +62,8 @@ the `installer_type` key to have a value of `pkg` or `sh` depending on what you 
 
 The pkg installer seems to need to have `conda` itself listed as a spec right now.
 
-## Releasing
+
+## Releasing
 
 For releasing, after the PR is merged, create a tag with the last commit from master and 
 push it to the repository, for example:
@@ -73,3 +74,33 @@ git checkout upstream/master
 rever check
 rever 0.0.3
 ```
+
+
+## Installation
+
+OmniSci Data Science package installs OmniSci stack that includes intake/intake-omnisci, omnisci-pytools, pymapd, ibis-framework, etc.
+
+
+### MacOS Instructions
+
+First, download the `sh` package from the GitHub `omnisci-datascience-installer` [realese page](https://github.com/Quansight/omnisci-datascience-installer/releases/). 
+
+Next, according to your environment follow the steps below:
+
+**If you have Anaconda and are using the Anaconda GUI or conda/miniconda:**
+
+Create a new conda environment from the environment.yaml available [here](https://github.com/Quansight/omnisci-examples/blob/master/environment.yml), either using the Anaconda Navigator GUI or the command line.
+
+
+**If you don't have either Anaconda or conda and need to use the bash installer:**
+
+Be sure that the file that you just download (.sh) has execution permission:
+
+```sh
+chmod +x 
+
+
+```
+
+**If you have installed the Mac Preview we need to tell them how to connect to an Omnisci database from your local machine**
+
