@@ -83,24 +83,28 @@ OmniSci Data Science package installs OmniSci stack that includes intake/intake-
 
 ### MacOS Instructions
 
-First, download the `sh` package from the GitHub `omnisci-datascience-installer` [realese page](https://github.com/Quansight/omnisci-datascience-installer/releases/). 
-
-Next, according to your environment follow the steps below:
+According to your environment follow one of the steps below:
 
 **If you have Anaconda and are using the Anaconda GUI or conda/miniconda:**
 
-Create a new conda environment from the environment.yaml available [here](https://github.com/Quansight/omnisci-examples/blob/master/environment.yml), either using the Anaconda Navigator GUI or the command line.
+Create a new conda environment from the environment.yml available [here](https://github.com/Quansight/omnisci-examples/blob/master/environment.yml), either using the Anaconda Navigator GUI or the command line.
 
 
-**If you don't have either Anaconda or conda and need to use the bash installer:**
+**If you don't have either Anaconda or conda, use the bash installer:**
 
-Be sure that the file that you just download (.sh) has execution permission:
+First, download the `sh` package from the GitHub `omnisci-datascience-installer` [realese page](https://github.com/Quansight/omnisci-datascience-installer/releases/) and add execution permission to it:
 
 ```sh
-chmod +x 
-
-
+wget https://github.com/Quansight/omnisci-datascience-installer/releases/download/0.0.2/omnisci-0.0.2-MacOSX-x86_64.sh
+chmod +x omnisci-0.0.2-MacOSX-x86_64.sh
 ```
+
+Now, you can install it, executing that file:
+
+```sh
+./omnisci-0.0.2-MacOSX-x86_64.sh
+```
+
 
 **If you have installed the Mac Preview we need to tell them how to connect to an Omnisci database from your local machine**
 
